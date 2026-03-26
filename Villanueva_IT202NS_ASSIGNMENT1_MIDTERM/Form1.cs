@@ -26,5 +26,10 @@ namespace Villanueva_IT202NS_ASSIGNMENT1_MIDTERM
         {
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
