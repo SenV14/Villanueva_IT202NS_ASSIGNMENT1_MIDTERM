@@ -57,11 +57,17 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.txttotalfSW2 = new System.Windows.Forms.TextBox();
             this.txtFsw2 = new System.Windows.Forms.TextBox();
+            this.txttotalfSW1 = new System.Windows.Forms.TextBox();
             this.txtFsw1 = new System.Windows.Forms.TextBox();
+            this.txtFtotalRecit2 = new System.Windows.Forms.TextBox();
             this.txtFrecit2 = new System.Windows.Forms.TextBox();
+            this.txtFtotalRecit1 = new System.Windows.Forms.TextBox();
             this.txtFrecit1 = new System.Windows.Forms.TextBox();
+            this.txtFtotalscores2 = new System.Windows.Forms.TextBox();
             this.txtFassign2 = new System.Windows.Forms.TextBox();
+            this.txtFtotalscores1 = new System.Windows.Forms.TextBox();
             this.txtFassign1 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -75,6 +81,7 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtMlabExam1 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -95,6 +102,12 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.txttotalmSW2 = new System.Windows.Forms.TextBox();
+            this.txttotalmSW1 = new System.Windows.Forms.TextBox();
+            this.txtMtotalRecit2 = new System.Windows.Forms.TextBox();
+            this.txtMtotalRecit1 = new System.Windows.Forms.TextBox();
+            this.txtMmtotalscores2 = new System.Windows.Forms.TextBox();
+            this.txtMtotalscores1 = new System.Windows.Forms.TextBox();
             this.txtMsw2 = new System.Windows.Forms.TextBox();
             this.txtMsw1 = new System.Windows.Forms.TextBox();
             this.txtMrecit2 = new System.Windows.Forms.TextBox();
@@ -136,6 +149,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txttotalpSW2 = new System.Windows.Forms.TextBox();
+            this.txttotalpSW1 = new System.Windows.Forms.TextBox();
+            this.txtPtotalRecit2 = new System.Windows.Forms.TextBox();
+            this.txtPtotalRecit1 = new System.Windows.Forms.TextBox();
+            this.txtPtotalscores2 = new System.Windows.Forms.TextBox();
+            this.txtPtotalscores1 = new System.Windows.Forms.TextBox();
             this.txtPsw2 = new System.Windows.Forms.TextBox();
             this.txtPsw1 = new System.Windows.Forms.TextBox();
             this.txtPrecit2 = new System.Windows.Forms.TextBox();
@@ -258,6 +277,7 @@
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(219, 32);
             this.textBox33.TabIndex = 14;
+            this.textBox33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox33_KeyPress);
             // 
             // groupBox19
             // 
@@ -280,6 +300,7 @@
             this.txtpresentation.Name = "txtpresentation";
             this.txtpresentation.Size = new System.Drawing.Size(142, 26);
             this.txtpresentation.TabIndex = 22;
+            this.txtpresentation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpresentation_KeyPress);
             // 
             // txtManuscript
             // 
@@ -288,6 +309,7 @@
             this.txtManuscript.Name = "txtManuscript";
             this.txtManuscript.Size = new System.Drawing.Size(142, 26);
             this.txtManuscript.TabIndex = 23;
+            this.txtManuscript.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtManuscript_KeyPress);
             // 
             // label33
             // 
@@ -332,6 +354,7 @@
             this.txtFquiz3.Name = "txtFquiz3";
             this.txtFquiz3.Size = new System.Drawing.Size(142, 26);
             this.txtFquiz3.TabIndex = 18;
+            this.txtFquiz3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFquiz3_KeyPress);
             // 
             // txtFquiz2
             // 
@@ -340,6 +363,7 @@
             this.txtFquiz2.Name = "txtFquiz2";
             this.txtFquiz2.Size = new System.Drawing.Size(142, 26);
             this.txtFquiz2.TabIndex = 17;
+            this.txtFquiz2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFquiz2_KeyPress);
             // 
             // txtFquiz1
             // 
@@ -348,6 +372,7 @@
             this.txtFquiz1.Name = "txtFquiz1";
             this.txtFquiz1.Size = new System.Drawing.Size(142, 26);
             this.txtFquiz1.TabIndex = 16;
+            this.txtFquiz1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFquiz1_KeyPress);
             // 
             // label34
             // 
@@ -404,6 +429,7 @@
             this.txtFlab4.Name = "txtFlab4";
             this.txtFlab4.Size = new System.Drawing.Size(110, 22);
             this.txtFlab4.TabIndex = 28;
+            this.txtFlab4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFlab4_KeyPress);
             // 
             // txtFlab3
             // 
@@ -412,6 +438,7 @@
             this.txtFlab3.Name = "txtFlab3";
             this.txtFlab3.Size = new System.Drawing.Size(110, 22);
             this.txtFlab3.TabIndex = 27;
+            this.txtFlab3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFlab3_KeyPress);
             // 
             // txtFlab2
             // 
@@ -420,6 +447,7 @@
             this.txtFlab2.Name = "txtFlab2";
             this.txtFlab2.Size = new System.Drawing.Size(110, 22);
             this.txtFlab2.TabIndex = 26;
+            this.txtFlab2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFlab2_KeyPress);
             // 
             // txtFlab1
             // 
@@ -428,6 +456,7 @@
             this.txtFlab1.Name = "txtFlab1";
             this.txtFlab1.Size = new System.Drawing.Size(110, 22);
             this.txtFlab1.TabIndex = 25;
+            this.txtFlab1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFlab1_KeyPress);
             // 
             // label37
             // 
@@ -471,11 +500,17 @@
             // 
             // groupBox22
             // 
+            this.groupBox22.Controls.Add(this.txttotalfSW2);
             this.groupBox22.Controls.Add(this.txtFsw2);
+            this.groupBox22.Controls.Add(this.txttotalfSW1);
             this.groupBox22.Controls.Add(this.txtFsw1);
+            this.groupBox22.Controls.Add(this.txtFtotalRecit2);
             this.groupBox22.Controls.Add(this.txtFrecit2);
+            this.groupBox22.Controls.Add(this.txtFtotalRecit1);
             this.groupBox22.Controls.Add(this.txtFrecit1);
+            this.groupBox22.Controls.Add(this.txtFtotalscores2);
             this.groupBox22.Controls.Add(this.txtFassign2);
+            this.groupBox22.Controls.Add(this.txtFtotalscores1);
             this.groupBox22.Controls.Add(this.txtFassign1);
             this.groupBox22.Controls.Add(this.label41);
             this.groupBox22.Controls.Add(this.label42);
@@ -491,53 +526,113 @@
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Class Performance";
             // 
+            // txttotalfSW2
+            // 
+            this.txttotalfSW2.Location = new System.Drawing.Point(163, 170);
+            this.txttotalfSW2.Multiline = true;
+            this.txttotalfSW2.Name = "txttotalfSW2";
+            this.txttotalfSW2.Size = new System.Drawing.Size(61, 22);
+            this.txttotalfSW2.TabIndex = 42;
+            this.txttotalfSW2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox14_KeyPress);
+            // 
             // txtFsw2
             // 
             this.txtFsw2.Location = new System.Drawing.Point(102, 171);
             this.txtFsw2.Multiline = true;
             this.txtFsw2.Name = "txtFsw2";
-            this.txtFsw2.Size = new System.Drawing.Size(110, 22);
+            this.txtFsw2.Size = new System.Drawing.Size(54, 22);
             this.txtFsw2.TabIndex = 24;
+            this.txtFsw2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFsw2_KeyPress);
+            // 
+            // txttotalfSW1
+            // 
+            this.txttotalfSW1.Location = new System.Drawing.Point(162, 139);
+            this.txttotalfSW1.Multiline = true;
+            this.txttotalfSW1.Name = "txttotalfSW1";
+            this.txttotalfSW1.Size = new System.Drawing.Size(61, 22);
+            this.txttotalfSW1.TabIndex = 41;
+            this.txttotalfSW1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
             // 
             // txtFsw1
             // 
             this.txtFsw1.Location = new System.Drawing.Point(102, 140);
             this.txtFsw1.Multiline = true;
             this.txtFsw1.Name = "txtFsw1";
-            this.txtFsw1.Size = new System.Drawing.Size(110, 22);
+            this.txtFsw1.Size = new System.Drawing.Size(54, 22);
             this.txtFsw1.TabIndex = 23;
+            this.txtFsw1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFsw1_KeyPress);
+            // 
+            // txtFtotalRecit2
+            // 
+            this.txtFtotalRecit2.Location = new System.Drawing.Point(162, 114);
+            this.txtFtotalRecit2.Multiline = true;
+            this.txtFtotalRecit2.Name = "txtFtotalRecit2";
+            this.txtFtotalRecit2.Size = new System.Drawing.Size(61, 22);
+            this.txtFtotalRecit2.TabIndex = 40;
+            this.txtFtotalRecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox16_KeyPress);
             // 
             // txtFrecit2
             // 
             this.txtFrecit2.Location = new System.Drawing.Point(102, 113);
             this.txtFrecit2.Multiline = true;
             this.txtFrecit2.Name = "txtFrecit2";
-            this.txtFrecit2.Size = new System.Drawing.Size(110, 22);
+            this.txtFrecit2.Size = new System.Drawing.Size(54, 22);
             this.txtFrecit2.TabIndex = 22;
+            this.txtFrecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrecit2_KeyPress);
+            // 
+            // txtFtotalRecit1
+            // 
+            this.txtFtotalRecit1.Location = new System.Drawing.Point(162, 86);
+            this.txtFtotalRecit1.Multiline = true;
+            this.txtFtotalRecit1.Name = "txtFtotalRecit1";
+            this.txtFtotalRecit1.Size = new System.Drawing.Size(61, 22);
+            this.txtFtotalRecit1.TabIndex = 39;
             // 
             // txtFrecit1
             // 
             this.txtFrecit1.Location = new System.Drawing.Point(102, 87);
             this.txtFrecit1.Multiline = true;
             this.txtFrecit1.Name = "txtFrecit1";
-            this.txtFrecit1.Size = new System.Drawing.Size(110, 22);
+            this.txtFrecit1.Size = new System.Drawing.Size(54, 22);
             this.txtFrecit1.TabIndex = 21;
+            this.txtFrecit1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrecit1_KeyPress);
+            // 
+            // txtFtotalscores2
+            // 
+            this.txtFtotalscores2.Location = new System.Drawing.Point(162, 58);
+            this.txtFtotalscores2.Multiline = true;
+            this.txtFtotalscores2.Name = "txtFtotalscores2";
+            this.txtFtotalscores2.Size = new System.Drawing.Size(61, 22);
+            this.txtFtotalscores2.TabIndex = 38;
+            this.txtFtotalscores2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox19_KeyPress);
             // 
             // txtFassign2
             // 
             this.txtFassign2.Location = new System.Drawing.Point(103, 59);
             this.txtFassign2.Multiline = true;
             this.txtFassign2.Name = "txtFassign2";
-            this.txtFassign2.Size = new System.Drawing.Size(110, 22);
+            this.txtFassign2.Size = new System.Drawing.Size(54, 22);
             this.txtFassign2.TabIndex = 20;
+            this.txtFassign2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFassign2_KeyPress);
+            // 
+            // txtFtotalscores1
+            // 
+            this.txtFtotalscores1.Location = new System.Drawing.Point(162, 25);
+            this.txtFtotalscores1.Multiline = true;
+            this.txtFtotalscores1.Name = "txtFtotalscores1";
+            this.txtFtotalscores1.Size = new System.Drawing.Size(61, 22);
+            this.txtFtotalscores1.TabIndex = 37;
+            this.txtFtotalscores1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox20_KeyPress);
             // 
             // txtFassign1
             // 
             this.txtFassign1.Location = new System.Drawing.Point(102, 26);
             this.txtFassign1.Multiline = true;
             this.txtFassign1.Name = "txtFassign1";
-            this.txtFassign1.Size = new System.Drawing.Size(110, 22);
+            this.txtFassign1.Size = new System.Drawing.Size(54, 22);
             this.txtFassign1.TabIndex = 19;
+            this.txtFassign1.TextChanged += new System.EventHandler(this.txtFassign1_TextChanged);
+            this.txtFassign1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFassign1_KeyPress);
             // 
             // label41
             // 
@@ -654,9 +749,11 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(219, 32);
             this.textBox18.TabIndex = 14;
+            this.textBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox18_KeyPress);
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.textBox1);
             this.groupBox12.Controls.Add(this.label17);
             this.groupBox12.Controls.Add(this.txtMlabExam1);
             this.groupBox12.Controls.Add(this.label18);
@@ -667,6 +764,15 @@
             this.groupBox12.TabIndex = 7;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Laboraory Exam";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(19, 109);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(142, 26);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label17
             // 
@@ -685,6 +791,7 @@
             this.txtMlabExam1.Name = "txtMlabExam1";
             this.txtMlabExam1.Size = new System.Drawing.Size(142, 26);
             this.txtMlabExam1.TabIndex = 21;
+            this.txtMlabExam1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMlabExam1_KeyPress);
             // 
             // label18
             // 
@@ -719,6 +826,7 @@
             this.txtMquiz3.Name = "txtMquiz3";
             this.txtMquiz3.Size = new System.Drawing.Size(142, 26);
             this.txtMquiz3.TabIndex = 18;
+            this.txtMquiz3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMquiz3_KeyPress);
             // 
             // txtMquiz2
             // 
@@ -727,6 +835,7 @@
             this.txtMquiz2.Name = "txtMquiz2";
             this.txtMquiz2.Size = new System.Drawing.Size(142, 26);
             this.txtMquiz2.TabIndex = 17;
+            this.txtMquiz2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMquiz2_KeyPress);
             // 
             // txtMquiz1
             // 
@@ -735,6 +844,7 @@
             this.txtMquiz1.Name = "txtMquiz1";
             this.txtMquiz1.Size = new System.Drawing.Size(142, 26);
             this.txtMquiz1.TabIndex = 16;
+            this.txtMquiz1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMquiz1_KeyPress);
             // 
             // label19
             // 
@@ -791,6 +901,7 @@
             this.txtMlab4.Name = "txtMlab4";
             this.txtMlab4.Size = new System.Drawing.Size(110, 22);
             this.txtMlab4.TabIndex = 28;
+            this.txtMlab4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMlab4_KeyPress);
             // 
             // txtMlab3
             // 
@@ -799,6 +910,7 @@
             this.txtMlab3.Name = "txtMlab3";
             this.txtMlab3.Size = new System.Drawing.Size(110, 22);
             this.txtMlab3.TabIndex = 27;
+            this.txtMlab3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMlab3_KeyPress);
             // 
             // txtMlab2
             // 
@@ -807,6 +919,7 @@
             this.txtMlab2.Name = "txtMlab2";
             this.txtMlab2.Size = new System.Drawing.Size(110, 22);
             this.txtMlab2.TabIndex = 26;
+            this.txtMlab2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMlab2_KeyPress);
             // 
             // txtMlab1
             // 
@@ -815,6 +928,7 @@
             this.txtMlab1.Name = "txtMlab1";
             this.txtMlab1.Size = new System.Drawing.Size(110, 22);
             this.txtMlab1.TabIndex = 25;
+            this.txtMlab1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMlab1_KeyPress);
             // 
             // label22
             // 
@@ -858,6 +972,12 @@
             // 
             // groupBox15
             // 
+            this.groupBox15.Controls.Add(this.txttotalmSW2);
+            this.groupBox15.Controls.Add(this.txttotalmSW1);
+            this.groupBox15.Controls.Add(this.txtMtotalRecit2);
+            this.groupBox15.Controls.Add(this.txtMtotalRecit1);
+            this.groupBox15.Controls.Add(this.txtMmtotalscores2);
+            this.groupBox15.Controls.Add(this.txtMtotalscores1);
             this.groupBox15.Controls.Add(this.txtMsw2);
             this.groupBox15.Controls.Add(this.txtMsw1);
             this.groupBox15.Controls.Add(this.txtMrecit2);
@@ -878,53 +998,115 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Class Performance";
             // 
+            // txttotalmSW2
+            // 
+            this.txttotalmSW2.Location = new System.Drawing.Point(163, 171);
+            this.txttotalmSW2.Multiline = true;
+            this.txttotalmSW2.Name = "txttotalmSW2";
+            this.txttotalmSW2.Size = new System.Drawing.Size(61, 22);
+            this.txttotalmSW2.TabIndex = 36;
+            this.txttotalmSW2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
+            // 
+            // txttotalmSW1
+            // 
+            this.txttotalmSW1.Location = new System.Drawing.Point(162, 140);
+            this.txttotalmSW1.Multiline = true;
+            this.txttotalmSW1.Name = "txttotalmSW1";
+            this.txttotalmSW1.Size = new System.Drawing.Size(61, 22);
+            this.txttotalmSW1.TabIndex = 35;
+            this.txttotalmSW1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_KeyPress);
+            // 
+            // txtMtotalRecit2
+            // 
+            this.txtMtotalRecit2.Location = new System.Drawing.Point(162, 115);
+            this.txtMtotalRecit2.Multiline = true;
+            this.txtMtotalRecit2.Name = "txtMtotalRecit2";
+            this.txtMtotalRecit2.Size = new System.Drawing.Size(61, 22);
+            this.txtMtotalRecit2.TabIndex = 34;
+            this.txtMtotalRecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
+            // 
+            // txtMtotalRecit1
+            // 
+            this.txtMtotalRecit1.Location = new System.Drawing.Point(162, 87);
+            this.txtMtotalRecit1.Multiline = true;
+            this.txtMtotalRecit1.Name = "txtMtotalRecit1";
+            this.txtMtotalRecit1.Size = new System.Drawing.Size(61, 22);
+            this.txtMtotalRecit1.TabIndex = 33;
+            this.txtMtotalRecit1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox11_KeyPress);
+            // 
+            // txtMmtotalscores2
+            // 
+            this.txtMmtotalscores2.Location = new System.Drawing.Point(162, 59);
+            this.txtMmtotalscores2.Multiline = true;
+            this.txtMmtotalscores2.Name = "txtMmtotalscores2";
+            this.txtMmtotalscores2.Size = new System.Drawing.Size(61, 22);
+            this.txtMmtotalscores2.TabIndex = 32;
+            this.txtMmtotalscores2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
+            // 
+            // txtMtotalscores1
+            // 
+            this.txtMtotalscores1.Location = new System.Drawing.Point(162, 26);
+            this.txtMtotalscores1.Multiline = true;
+            this.txtMtotalscores1.Name = "txtMtotalscores1";
+            this.txtMtotalscores1.Size = new System.Drawing.Size(61, 22);
+            this.txtMtotalscores1.TabIndex = 31;
+            this.txtMtotalscores1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox13_KeyPress);
+            // 
             // txtMsw2
             // 
             this.txtMsw2.Location = new System.Drawing.Point(102, 171);
             this.txtMsw2.Multiline = true;
             this.txtMsw2.Name = "txtMsw2";
-            this.txtMsw2.Size = new System.Drawing.Size(110, 22);
+            this.txtMsw2.Size = new System.Drawing.Size(54, 22);
             this.txtMsw2.TabIndex = 24;
+            this.txtMsw2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMsw2_KeyPress);
             // 
             // txtMsw1
             // 
             this.txtMsw1.Location = new System.Drawing.Point(102, 140);
             this.txtMsw1.Multiline = true;
             this.txtMsw1.Name = "txtMsw1";
-            this.txtMsw1.Size = new System.Drawing.Size(110, 22);
+            this.txtMsw1.Size = new System.Drawing.Size(54, 22);
             this.txtMsw1.TabIndex = 23;
+            this.txtMsw1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMsw1_KeyPress);
             // 
             // txtMrecit2
             // 
             this.txtMrecit2.Location = new System.Drawing.Point(102, 113);
             this.txtMrecit2.Multiline = true;
             this.txtMrecit2.Name = "txtMrecit2";
-            this.txtMrecit2.Size = new System.Drawing.Size(110, 22);
+            this.txtMrecit2.Size = new System.Drawing.Size(54, 22);
             this.txtMrecit2.TabIndex = 22;
+            this.txtMrecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMrecit2_KeyPress);
             // 
             // txtMrecit1
             // 
             this.txtMrecit1.Location = new System.Drawing.Point(102, 87);
             this.txtMrecit1.Multiline = true;
             this.txtMrecit1.Name = "txtMrecit1";
-            this.txtMrecit1.Size = new System.Drawing.Size(110, 22);
+            this.txtMrecit1.Size = new System.Drawing.Size(54, 22);
             this.txtMrecit1.TabIndex = 21;
+            this.txtMrecit1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMrecit1_KeyPress);
             // 
             // txtMassign2
             // 
             this.txtMassign2.Location = new System.Drawing.Point(103, 59);
             this.txtMassign2.Multiline = true;
             this.txtMassign2.Name = "txtMassign2";
-            this.txtMassign2.Size = new System.Drawing.Size(110, 22);
+            this.txtMassign2.Size = new System.Drawing.Size(54, 22);
             this.txtMassign2.TabIndex = 20;
+            this.txtMassign2.TextChanged += new System.EventHandler(this.txtMassign2_TextChanged);
+            this.txtMassign2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMassign2_KeyPress);
             // 
             // txtMassign1
             // 
             this.txtMassign1.Location = new System.Drawing.Point(102, 26);
             this.txtMassign1.Multiline = true;
             this.txtMassign1.Name = "txtMassign1";
-            this.txtMassign1.Size = new System.Drawing.Size(110, 22);
+            this.txtMassign1.Size = new System.Drawing.Size(54, 22);
             this.txtMassign1.TabIndex = 19;
+            this.txtMassign1.TextChanged += new System.EventHandler(this.txtMassign1_TextChanged);
+            this.txtMassign1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMassign1_KeyPress);
             // 
             // label26
             // 
@@ -1287,6 +1469,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txttotalpSW2);
+            this.groupBox2.Controls.Add(this.txttotalpSW1);
+            this.groupBox2.Controls.Add(this.txtPtotalRecit2);
+            this.groupBox2.Controls.Add(this.txtPtotalRecit1);
+            this.groupBox2.Controls.Add(this.txtPtotalscores2);
+            this.groupBox2.Controls.Add(this.txtPtotalscores1);
             this.groupBox2.Controls.Add(this.txtPsw2);
             this.groupBox2.Controls.Add(this.txtPsw1);
             this.groupBox2.Controls.Add(this.txtPrecit2);
@@ -1303,17 +1491,71 @@
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox2.Location = new System.Drawing.Point(6, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(229, 207);
+            this.groupBox2.Size = new System.Drawing.Size(244, 207);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Class Performance";
+            // 
+            // txttotalpSW2
+            // 
+            this.txttotalpSW2.Location = new System.Drawing.Point(169, 171);
+            this.txttotalpSW2.Multiline = true;
+            this.txttotalpSW2.Name = "txttotalpSW2";
+            this.txttotalpSW2.Size = new System.Drawing.Size(61, 22);
+            this.txttotalpSW2.TabIndex = 30;
+            this.txttotalpSW2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
+            // 
+            // txttotalpSW1
+            // 
+            this.txttotalpSW1.Location = new System.Drawing.Point(168, 140);
+            this.txttotalpSW1.Multiline = true;
+            this.txttotalpSW1.Name = "txttotalpSW1";
+            this.txttotalpSW1.Size = new System.Drawing.Size(61, 22);
+            this.txttotalpSW1.TabIndex = 29;
+            this.txttotalpSW1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
+            // 
+            // txtPtotalRecit2
+            // 
+            this.txtPtotalRecit2.Location = new System.Drawing.Point(168, 115);
+            this.txtPtotalRecit2.Multiline = true;
+            this.txtPtotalRecit2.Name = "txtPtotalRecit2";
+            this.txtPtotalRecit2.Size = new System.Drawing.Size(61, 22);
+            this.txtPtotalRecit2.TabIndex = 28;
+            this.txtPtotalRecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            // 
+            // txtPtotalRecit1
+            // 
+            this.txtPtotalRecit1.Location = new System.Drawing.Point(168, 87);
+            this.txtPtotalRecit1.Multiline = true;
+            this.txtPtotalRecit1.Name = "txtPtotalRecit1";
+            this.txtPtotalRecit1.Size = new System.Drawing.Size(61, 22);
+            this.txtPtotalRecit1.TabIndex = 27;
+            this.txtPtotalRecit1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
+            // 
+            // txtPtotalscores2
+            // 
+            this.txtPtotalscores2.Location = new System.Drawing.Point(168, 59);
+            this.txtPtotalscores2.Multiline = true;
+            this.txtPtotalscores2.Name = "txtPtotalscores2";
+            this.txtPtotalscores2.Size = new System.Drawing.Size(61, 22);
+            this.txtPtotalscores2.TabIndex = 26;
+            this.txtPtotalscores2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            // 
+            // txtPtotalscores1
+            // 
+            this.txtPtotalscores1.Location = new System.Drawing.Point(168, 26);
+            this.txtPtotalscores1.Multiline = true;
+            this.txtPtotalscores1.Name = "txtPtotalscores1";
+            this.txtPtotalscores1.Size = new System.Drawing.Size(61, 22);
+            this.txtPtotalscores1.TabIndex = 25;
+            this.txtPtotalscores1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // txtPsw2
             // 
             this.txtPsw2.Location = new System.Drawing.Point(102, 171);
             this.txtPsw2.Multiline = true;
             this.txtPsw2.Name = "txtPsw2";
-            this.txtPsw2.Size = new System.Drawing.Size(110, 22);
+            this.txtPsw2.Size = new System.Drawing.Size(61, 22);
             this.txtPsw2.TabIndex = 24;
             this.txtPsw2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPsw2_KeyPress);
             // 
@@ -1322,7 +1564,7 @@
             this.txtPsw1.Location = new System.Drawing.Point(102, 140);
             this.txtPsw1.Multiline = true;
             this.txtPsw1.Name = "txtPsw1";
-            this.txtPsw1.Size = new System.Drawing.Size(110, 22);
+            this.txtPsw1.Size = new System.Drawing.Size(61, 22);
             this.txtPsw1.TabIndex = 23;
             this.txtPsw1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPsw1_KeyPress);
             // 
@@ -1331,7 +1573,7 @@
             this.txtPrecit2.Location = new System.Drawing.Point(102, 113);
             this.txtPrecit2.Multiline = true;
             this.txtPrecit2.Name = "txtPrecit2";
-            this.txtPrecit2.Size = new System.Drawing.Size(110, 22);
+            this.txtPrecit2.Size = new System.Drawing.Size(61, 22);
             this.txtPrecit2.TabIndex = 22;
             this.txtPrecit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecit2_KeyPress);
             // 
@@ -1340,7 +1582,7 @@
             this.txtPrecit1.Location = new System.Drawing.Point(102, 87);
             this.txtPrecit1.Multiline = true;
             this.txtPrecit1.Name = "txtPrecit1";
-            this.txtPrecit1.Size = new System.Drawing.Size(110, 22);
+            this.txtPrecit1.Size = new System.Drawing.Size(61, 22);
             this.txtPrecit1.TabIndex = 21;
             this.txtPrecit1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecit1_KeyPress);
             // 
@@ -1349,7 +1591,7 @@
             this.txtPassign2.Location = new System.Drawing.Point(103, 59);
             this.txtPassign2.Multiline = true;
             this.txtPassign2.Name = "txtPassign2";
-            this.txtPassign2.Size = new System.Drawing.Size(110, 22);
+            this.txtPassign2.Size = new System.Drawing.Size(60, 22);
             this.txtPassign2.TabIndex = 20;
             this.txtPassign2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassign2_KeyPress);
             // 
@@ -1358,7 +1600,7 @@
             this.txtPassign1.Location = new System.Drawing.Point(102, 26);
             this.txtPassign1.Multiline = true;
             this.txtPassign1.Name = "txtPassign1";
-            this.txtPassign1.Size = new System.Drawing.Size(110, 22);
+            this.txtPassign1.Size = new System.Drawing.Size(61, 22);
             this.txtPassign1.TabIndex = 19;
             this.txtPassign1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassign1_KeyPress);
             // 
@@ -1458,7 +1700,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1620, 661);
+            this.ClientSize = new System.Drawing.Size(1642, 661);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
@@ -1634,6 +1876,25 @@
         private System.Windows.Forms.TextBox txtPlabExam2;
         private System.Windows.Forms.TextBox txtPlabExam1;
         private System.Windows.Forms.TextBox txtManuscript;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttotalfSW2;
+        private System.Windows.Forms.TextBox txttotalfSW1;
+        private System.Windows.Forms.TextBox txtFtotalRecit2;
+        private System.Windows.Forms.TextBox txtFtotalRecit1;
+        private System.Windows.Forms.TextBox txtFtotalscores2;
+        private System.Windows.Forms.TextBox txtFtotalscores1;
+        private System.Windows.Forms.TextBox txttotalmSW2;
+        private System.Windows.Forms.TextBox txttotalmSW1;
+        private System.Windows.Forms.TextBox txtMtotalRecit2;
+        private System.Windows.Forms.TextBox txtMtotalRecit1;
+        private System.Windows.Forms.TextBox txtMmtotalscores2;
+        private System.Windows.Forms.TextBox txtMtotalscores1;
+        private System.Windows.Forms.TextBox txttotalpSW2;
+        private System.Windows.Forms.TextBox txttotalpSW1;
+        private System.Windows.Forms.TextBox txtPtotalRecit2;
+        private System.Windows.Forms.TextBox txtPtotalRecit1;
+        private System.Windows.Forms.TextBox txtPtotalscores2;
+        private System.Windows.Forms.TextBox txtPtotalscores1;
     }
 }
 
