@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,29 @@ namespace Villanueva_IT202NS_ASSIGNMENT1_MIDTERM
         public Form1()
         {
             InitializeComponent();
+            //Variables for prelim scores
+            double PrelimAss1, PrelimAss2, PrelimRecit1, Prelimrecit2,PrelimSW1, PrelimSW2,
+                  prelimLab1,PrelimLab2,PrelimLab3,PrelimLab4,
+                  PrelimQ1,PrelimQ2,PrelimQ3,Prelimexam_Lab1, 
+                  Prelimexam_Lab2,PrelimExamine,PrelimFinal_score;
+            //Variables for Midterms scores
+            double MidAss1, MidAss2, MidRecit1, Midrecit2, MidSW1, MidSW2,
+                  MidLab1, MidmLab2, MidLab3, MidLab4, MidQ1, MidQ2, MidQ3,
+                  Midexam_Lab1, Midexam_Lab2, MidExamine, MidFinal_score;
+            //Variables for Finals scores
+            double FinalAss1, FinalAss2, FinaRecit1, Finarecit2, FinaSW1, FinaSW2,
+                 FinaLab1, FinaLab2, FinaLab3, FinaLab4, FinaQ1, FinaQ2, FinaQ3,
+                  Finaexam_Lab1, Finaexam_Lab2, FinaExamine, Fina_Final_score;
+            //Variables for max Scores in prelim, midterm and finals
+            //For prelims
+            double MaxPrelimAss1, MaxPrelimAss2, MaxPrelimRecit1, MaxPrelimrecit2, MaxPrelimSW1, MaxPrelimSW2;
+            //For midterms
+            double MaxMidAss1, MaxMidAss2, MaxMidRecit1, MaxMidrecit2, MaxMidSW1, MaxMidSW2;
+            //For finals
+            double MaxFinalAss1, MaxFinalAss2, MaxFinaRecit1, MaxFinarecit2, MaxFinaSW1, MaxFinaSW2;
+            //Tryparse for Prelim Scores
+            
+           
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
